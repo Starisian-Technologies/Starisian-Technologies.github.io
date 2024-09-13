@@ -1,10 +1,57 @@
-body {
-    margin: 0;
-    overflow: hidden; /* Hide scrollbars for animation */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #111; /* Dark background */
-    color: #fff;
+.aclonica-regular {
+  font-family: "Aclonica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
+
+html,
+body {
+  height: 100%;  /* Ensure the body fills the viewport height */
+  margin: 0;
+  overflow: hidden;  /* Hide scrollbars for a cleaner look */
+}
+
+body {
+  background-color: #01040d; /* A deeper, darker blue for the night sky */
+  font-family: 'Noto Sans', Arial, Helvetica, sans-serif; /* Optional: Choose a font you like */
+  margin: 0;
+    overflow: hidden; /* Hide scrollbars for animation */
+    color: amber;
+}
+
+H1, H3 {
+    
+}
+
+.stars {
+  position: absolute;
+  width: 2px; /* Slightly larger for better visibility */
+  height: 2px;
+  background-color: #fff; /* White star color */
+  border-radius: 50%; /* Make them circular */
+  opacity: 0; /* Start hidden for a fade-in effect */
+
+  /* Randomize initial animation values for a more natural look */
+  animation-name: twinkle;
+  animation-duration: calc(1s + 2s * var(--random-duration)); /* Randomize duration (1-3 seconds) */
+  animation-delay: calc(1s * var(--random-delay));  /* Randomize delay (up to 1 second) */
+  animation-iteration-count: infinite; 
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out; /* Smoother twinkling */
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0; /* Start completely transparent */
+  }
+  50% {
+    opacity: 1; /* Brightest at the middle of the animation */
+  }
+  100% {
+    opacity: 0;
+  }
+} 
 
 .container {
     display: flex;
