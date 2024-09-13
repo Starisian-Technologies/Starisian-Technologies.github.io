@@ -34,6 +34,7 @@ H1, H3 {
   background-color: #fff; /* White star color */
   border-radius: 50%; /* Make them circular */
   opacity: 0; /* Start hidden for a fade-in effect */
+  z-index: 1000;
 
   /* Randomize initial animation values for a more natural look */
   animation-name: twinkle;
@@ -74,7 +75,7 @@ H1, H3 {
 }
 
 .curtain {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
     width: 50%;
     height: 100%;
     position: absolute;
