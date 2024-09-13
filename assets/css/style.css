@@ -17,11 +17,12 @@ body {
   font-family: 'Noto Sans', Arial, Helvetica, sans-serif; /* Optional: Choose a font you like */
   margin: 0;
     overflow: hidden; /* Hide scrollbars for animation */
-    color: amber;
+    color: #f2f2f2;
 }
 
 H1, H3 {
-    
+    font: .aclonica-regular;
+    color: amber;
 }
 
 .stars {
